@@ -18,8 +18,8 @@ async function createTodo(data: FormData){
 const page = () => {
     return (
         <>
-            <header className="flex justify-between mb-4 items-center">
-                <h1 className="text-2xl">New</h1>
+            <header className="flex justify-between mb-10 items-center">
+                <h1 className="text-2xl">New todo</h1>
             </header>
             <form action={createTodo} className="flex gap-2 flex-col">
                 <input
@@ -29,8 +29,8 @@ const page = () => {
                     className="border border-slate-300 bg-transparent rounded px-2 py-1 outline-none focus-within:border-slate-100"
                 />
                 <div className="flex gap-1 justify-end">
-                    <Link className="border border-slate-300 text-slate-300 px-2 py-1 rounded hover:bg-slate-700 focus-within:bg-slate-700 outline-none" href='..'>Cancel</Link>
-                    <button className="border border-slate-300 text-slate-300 px-2 py-1 rounded hover:bg-slate-700 focus-within:bg-slate-700 outline-none" type="submit">Create</button>
+                    <Link className="bg-zinc-900 border border-slate-300 text-slate-300 px-2 py-1 rounded hover:bg-zinc-700 focus-within:bg-slate-700 outline-none" href='..'>Cancel</Link>
+                    <button className="bg-green-800 border border-slate-300 text-slate-300 px-2 py-1 rounded hover:bg-green-500 focus-within:bg-slate-700 outline-none" type="submit">Create</button>
                 </div>
             </form>
         </>
