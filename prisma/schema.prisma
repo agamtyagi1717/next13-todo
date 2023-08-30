@@ -7,12 +7,12 @@ generator client {
 
 datasource db {
   provider = "mongodb"
-  url      = env("DATABASE_URL")
+  url      = "mongodb+srv://agamtyagi1717:M5mrhozVm3kssNgg@cluster0.qtntyg7.mongodb.net/next-todo?retryWrites=true&w=majority"
 }
 
 model Todo {
   id        String   @id @default(auto()) @map("_id") @db.ObjectId
-  title     String
+  title     String   @unique
   complete  Boolean
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
